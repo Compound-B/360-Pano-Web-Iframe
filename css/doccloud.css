@@ -1,0 +1,78 @@
+/*styles for embedded annotation viewer*/
+
+.annotation .nav {
+    width:29%;
+}
+
+.annotation .element-container a:link,.annotation .element-container a:visited,.annotation .element-container a:hover {
+	text-decoration:none;
+	text-decoration:none;
+	color:#000;
+}
+.annotation .arrow {
+	border-color:transparent transparent transparent #ddd;
+	border-style:solid;
+	border-width:17px;
+	height:0;
+	width:0;
+	position:absolute;
+	top:8px;
+	left:100%;
+	display: none;
+}
+.annotation .active .arrow {
+    display: block;
+}
+
+.annotation .arrow:after {
+    content: ' ';
+    border-color: transparent transparent transparent #fff4a8;
+    border-style: solid;
+    border-width: 16px;
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -16px;
+    left: -17px;
+    display: none;
+}
+.annotation .active .arrow:after {
+    display: block;
+}
+
+.annotation .element {
+	position:relative;
+    margin-bottom: -1px;
+	padding:12px 10px;
+	border:1px solid #ddd;
+	cursor:pointer;
+	display: block;
+}
+.annotation .element:hover {
+    background: #efefef;
+}
+
+.annotation .active,
+.annotation .active:hover {
+	background-color:#fff4a8;
+	z-index: 10;
+}
+
+.element h4 {
+    margin-bottom: 5px;
+}
+
+/* temporarily overriding pagination */
+.annotation .DV-pagination {
+    display: none;
+}
+
+.annotation .document {
+    width:71%;
+}
+
+/*
+.annotation .DV-container {
+    width:100% !important;
+}
+*/

@@ -1,0 +1,22 @@
+#hp-animated-gif {
+    position: relative;
+    margin-bottom: 10px;
+    width: 296px;
+}
+#hp-animated-gif img {
+    border: 1px solid #E1E1E1;
+    padding: 1px;
+    width: 100%;
+}
+.static-fallback {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    display: none;
+}
+.static-fallback.shown {
+    position: relative;
+    top: auto;
+    left: auto;
+}

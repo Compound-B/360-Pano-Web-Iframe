@@ -1,0 +1,124 @@
+/* wp-slider */
+.wp-slider {
+    position:relative;
+    width: 100%;
+    /* awfullness to overwrite sitewide jquery ui */
+    border:0 none!important;
+    -khtml-border-radius:0!important;
+    -moz-border-radius:0!important;
+    -webkit-border-radius:0!important;
+    border-radius:0!important;
+}
+
+.wp-slider .slide-content {
+    overflow:hidden;
+    position: absolute;
+    top:0px;
+    max-width: 100%;
+    width: 100%;
+}
+.wp-slider .slide-content.last-slide {
+    position: relative;
+    width: 0%;
+}
+.wp-slider .content-label {
+    position:absolute;
+    right:0;
+    top:0;
+    padding:7px 10px;
+    margin:0;
+    background:#000;
+    background:rgba(0,0,0,0.75);
+    color:#fff;
+    font-size:14px;
+}
+.wp-slider .last-slide .content-label {
+    left:0;
+    right:auto;
+}
+.wp-slider .fade-element {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+    transition-timing-function: ease-out-quad;
+    transition: opacity .3s;
+    -moz-transition: opacity .3s; /* Firefox 4 */
+    -webkit-transition: opacity .3s; /* Safari and Chrome */
+    -o-transition: opacity .3s; /* Opera */
+}
+
+.wp-slider .handle-arrows {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+.wp-slider:hover .fade-element {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+
+.wp-slider .controller {
+    position:absolute;
+    cursor:col-resize;
+    top:0px;
+    bottom:0px;
+    z-index: 1;
+}
+
+.wp-slider .handle-arrows {
+    position:absolute;
+    background:url(http://www.washingtonpost.com/wp-srv/graphics/templates/images/handle-arrows-v2.png) no-repeat 0 50%;
+    height:100%;
+    width:37px;
+    left:-18px;
+}
+.wp-slider .content-scroll {
+    position:absolute;
+    height:100%;
+}
+
+.wp-slider .divider {
+    height:100%;
+    width:2px;
+    background:#ddd;
+    margin-left: -1px;
+}
+
+.wp-slider .handle {
+    position:absolute;
+    background:url(http://www.washingtonpost.com/wp-srv/graphics/templates/images/handle.png) no-repeat 0 50%;
+    height:100%;
+    width:13px;
+    left:-6px;
+    top:0px;
+}
+
+.wp-slider .handle.hover {
+    background-position: -13px 50%;
+}
+
+/* repsonsive */
+/* PHONES */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    /* arrows always visible */
+    .wp-slider .handle-arrows {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+        -moz-opacity: 1;
+        -khtml-opacity: 1;
+        opacity: 1;
+    }
+    .wp-slider .content-label {
+        font-size: 13px;
+        padding: 4px 8px;
+    }
+}

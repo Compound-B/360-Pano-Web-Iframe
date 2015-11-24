@@ -1,0 +1,6 @@
+@media (max-device-width : 480px) {
+    .profile-row { border-bottom: 1px solid #ccc; margin-bottom: 20px; }
+    .profile-row:last-child { border-bottom: none; margin-bottom: 0px; }
+    .profile-row .img.left { float: none; text-align: center; }
+    .profile-row .img img { width: auto; }    
+}

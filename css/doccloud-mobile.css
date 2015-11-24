@@ -1,0 +1,32 @@
+.pdf-text {
+    background-color: #F3EEE2;
+    border-bottom: 1px solid #DACB8E;
+    border-top: 1px solid #DACB8E;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 20px;
+    -moz-text-shadow: 0px 0px #eee;
+    -webkit-text-shadow: 0px 0px #eee;
+    text-shadow: 0px 0px #eee;
+}
+p.view-original {
+    background-color: #fcfcfc;
+    border: 1px solid #CCC;
+    margin-top: -10px;
+}
+p.view-original a {
+    color: #444;
+}
+p.view-original a:hover {
+    color: #000;
+}
+p.view-original i {
+    font-size: 1.2em;
+    margin-right: 8px;
+    margin-bottom: 2px;
+}
+p.view-original.full-icon {
+    background-color: #F3EEE2;
+    float: none;
+    margin: 15px 0px;
+}

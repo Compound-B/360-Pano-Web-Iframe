@@ -1,0 +1,423 @@
+
+/* preloader */
+.preloader {position:relative;z-index:1000;background:white; display: block;}
+.preloader div {position:absolute; top: 0px; left: -2px; background:white url(http://media.washingtonpost.com/wp-srv/sports/highschools/images/loadingAnimation.gif) no-repeat 50% 36px;width:995px;height:1100px;}
+#main-preloader { z-index:10000;}
+
+
+#content h1 {
+    font-size: 34px;
+}
+
+#content a:hover {
+    color: #000;
+}
+
+#content .blocker {
+    width: 100%;
+    height:100%;
+    z-index:10000;
+    position:absolute;
+    display:none;
+}
+
+#content .wp-column {
+    position: relative;
+}
+
+
+#content #vp-right-col {
+   width: 295px;
+   z-index: 10;
+   position: relative;
+   float: left;
+}
+#content #vp-left-col {
+    width:675px;
+    float: left;
+}
+
+#content #video-player-holder {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    /*height: 645px;
+    overflow: hidden;*/
+}
+
+#content #video-player {
+    margin: 15px 21px 0px;
+    border: 1px solid #333;
+    background: #000;
+    position: relative;
+    *width: 985px;
+    _width: 985px;
+    _margin: 15px 0px 0px 0px;
+    *margin: 15px 0px 0px 0px;
+    padding:0px;
+}
+
+#content #omni-player-wrapper {
+
+	width: 945px;
+	height: 530px;
+}
+
+#content #video-details {
+    margin: 0px 21px 15px 21px;
+    background: #000;
+    color: #efefef;
+    position: relative;
+    *width: 987px;
+    _width: 987px;
+    _margin: 0px 0px 0px 0px;
+    *margin: 0px 0px 0px 0px;
+    padding:0px;
+
+}
+
+
+/* OOYALA COMPANION STYLES */
+
+
+#ooyala_companion_ad { 
+	
+	left: 570px;
+	top: 150px;
+	width: 320px;
+	height: 250px;
+
+}
+
+
+#video-details .wrapper {
+    padding: 5px 10px;
+}
+
+#content #video-details .deets img {
+   margin-top: 6px;
+}
+
+#content #video-details p {
+    margin-bottom:5px;
+    
+}
+
+#content h4 {
+    margin-top: 5px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 3px;
+}
+
+#content #nav {
+    background-color: #eaeaea;
+}
+
+#content #v-back, #content #v-next {
+    margin: 4px 5px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+    float: left;
+    font-size: 12px;
+    width: 32%;
+    cursor:pointer;
+}
+
+#content #v-back {
+    background: url('http://media.washingtonpost.com/wp-srv/graphics/templates/images/arrow-l.png') no-repeat;
+    padding-left: 13px;
+}
+
+#content #v-next {
+    background: url('http://media.washingtonpost.com/wp-srv/graphics/templates/images/arrow-r.png') no-repeat;
+    text-align: right;
+    margin-right: 0px;
+    padding-right: 15px;
+    background-position: 100% 0;
+}
+
+#content #v-back:hover {
+    background-position: 0 -15px;
+    color: #de933a;
+}
+
+#content #v-next:hover {
+    background-position: 100% -15px;
+    color: #de933a;
+}
+
+#content #v-counter {
+    margin: 4px 5px;
+    color: #666666;
+    font-size: 11px;
+    float: left;
+    width: 30%;
+    *width: 830px;
+    _width: 830px;
+    text-align: center;
+}
+
+#video-playlist {
+    height: 655px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+#video-playlist .p-item {
+    width: 160px;
+    margin-right: 5px;
+    background: #efefef;
+    float: left;
+    height: 160px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+#video-playlist .p-item:hover {
+    width: 160px;
+    margin-right: 5px;
+    background: #de933a;
+    float: left;
+    height: 160px;
+    margin-bottom: 5px;
+}
+
+
+
+
+#video-playlist .selected, #video-playlist .selected:hover {
+    
+    background: #222222;
+    color: #ffffff;
+}
+
+#video-playlist .p-item p {
+    line-height: 14px;
+    margin: 5px;
+}
+
+#video-playlist .p-item img {
+    margin: 0 5px;
+}
+
+#video-playlist .p-item img.thumb {
+    border: 1px solid #666;
+    float: left;
+    margin: 5px;
+}
+
+#video-playlist .show-ratings:hover {
+    background-color: #dedede;
+}
+
+
+
+.more-bar {
+    background-color: #eaeaea;
+    width: 99%;
+    *width: 655px;
+    _width: 655px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.more-bar:hover {
+    background-color: #efefef;
+}
+
+.more-bar p {
+    margin: 4px 0;
+}
+
+
+.video-slideshow-nav {
+    position: absolute;
+    top: 0;
+    margin-top: 0px;
+    width: 100%;
+    height: 425px;
+    left: 0;
+    z-index: 20000;
+}
+.video-slideshow-nav .left-nav, .video-slideshow-nav .right-nav {
+    float: left;
+    width: 50%;
+    height: 100%;
+    z-index: 1000;
+    position: relative;
+}
+.video-slideshow-nav-left,
+.video-slideshow-nav-right {
+    background-image: url(http://media.washingtonpost.com/wp-srv/graphics/templates/images/large-photo-nav.png);
+    background-repeat: no-repeat;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    cursor: none;
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+    background-position: 0 0px;
+    display:none;
+    pointer-events: none;
+}
+.video-slideshow-nav-right {
+    left: auto;
+    right: 10px;
+    background-position: -60px 0px;
+    z-index: 2;
+}
+
+
+/* SHARING */
+
+#toolbar_share {
+    width: 140px;
+    margin-top: 15px;
+}
+
+#content h5 {
+    font-size: 11px;
+    font-weight: normal;
+    text-align: center;
+    color: #949494;
+    margin-bottom:0px;
+    padding-bottom:0px;
+}
+
+#content h5.social-title { 
+margin-top: 3px;
+}
+
+#content #commentButton {
+	height: 16px;
+	background: url(http://media.washingtonpost.com/wp-srv/graphics/templates/images/comment.png) no-repeat;
+}
+#content #facebookButton {
+	height: 20px;
+	background: url(http://media.washingtonpost.com/wp-srv/graphics/templates/images/facebook.png) no-repeat;
+}
+#content #twitterButton {
+	height: 15px;
+	background: url(http://media.washingtonpost.com/wp-srv/graphics/templates/images/twitter.png) no-repeat;
+}
+#content #moreShareButton {
+	height: 15px;
+	padding-bottom:10px;
+	margin-bottom:0px;
+	background: url(http://media.washingtonpost.com/wp-srv/graphics/templates/images/moreShare.png) no-repeat;
+}
+
+
+
+#sharebar .newshare{font-family:Arial;font-size:11px;width:140px;}#sharebar .newshare ul li{border:none;padding:0;height:16px;}#sharebar .newshare ul li a{padding:0;margin:0;}#sharebar .newshare a,#sharebar .newshare a:hover{color:#000;text-decoration:none;font-weight:bold;}#sharebar .share li{display:inline;margin-right:5px;float:left;display:block;}#sharebar .share-text{color:#999;font-weight:normal;}#sharebar li .more{margin:-7px 0 0 -210px;padding:7px;position:absolute;width:220px;display:none;z-index:998;}#sharebar li .morebottom{border:solid #ddd 1px;padding:15px;width:100%;margin-top:7px;font-size:12px;box-shadow:4px 4px 4px #eee;background-color:#fff;}#sharebar li .morebottom .left,#sharebar li .morebottom .right{float:left;width:100px;}#sharebar li .morebottom .left{border-right:solid #eee 1px;padding-right:0;margin-right:15px;}#sharebar li .morebottom ul,#sharebar li .morebottom ul li{margin:0;padding:0;}#sharebar li .morebottom ul li{text-align:left;height:28px;line-height:25px;}#sharebar li .morebottom ul li a,#sharebar li .morebottom ul li a:hover{font-weight:normal;}#sharebar li .arrow-one,#sharebar li .arrow-two{width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:0;position:absolute;left:219px;}#sharebar li .arrow-one{top:7;border-bottom:8px solid #ddd;}#sharebar li .arrow-two{top:9px;border-bottom:8px solid #fff;}#sharebar .shareitems{display:block;height:16px;width:16px;background:url("http://www.washingtonpost.com/rw/sites/twpweb/img/icons/icon-sprite-share.png") no-repeat!important;}#sharebar .morebottom a{background:none;}#sharebar .shareitems.facebook{background-position:0 -19px!important;}#sharebar .shareitems.twitter{background-position:0 -38px!important;}#sharebar .shareitems.digg{background-position:0 -57px!important;}#sharebar .shareitems.delicious{background-position:0 -76px!important;}#sharebar .shareitems.stumbleupon{background-position:0 -95px!important;}#sharebar .shareitems.b{background-position:0 -114px!important;}#sharebar .shareitems.myspace{background-position:0 -133px!important;}#sharebar .shareitems.linkedin{background-position:0 -152px!important;}#sharebar .shareitems.email{background-position:0 -171px!important;}#sharebar .shareitems.rss{background-position:0 -190px!important;}#sharebar .shareitems.mobile{background-position:0 -209px!important;}#sharebar .shareitems.tumblr{background-position:0 -228px!important;}#sharebar .shareitems.reddit{background-position:0 -247px!important;}#sharebar .morebutton{background:none;}.morebottom .shareitems{float:left;margin:4px 6px 0 0;}.newshare li.sharetop{height:16px;line-height:16px;}
+
+
+#content #sharebar .more {
+	margin-right:50px; 
+	right:80px; 
+	margin-top:-45px;
+}
+
+#content #sharebar .morebottom {
+	top: 0px;
+	margin-top: 10px;
+	background-color: #0a0a0a; 
+	border-color:#393939;
+	right:10px;
+	-webkit-box-shadow: 0px 0px 3px #000000; 
+	-moz-box-shadow: 0px 0px 3px #000000; 
+	box-shadow: 0px 0px 3px #000000; 
+}
+
+#sharebar li {
+    float: left;
+}
+
+#sharebar li .more {
+    margin: -7px 0 0 -210px;
+    padding: 7px;
+    position: absolute;
+    top: -70px;
+    width: 220px;
+}
+
+#sharebar li .morebottom {
+    border: solid #DDD 1px;
+    padding: 15px;
+    width: 100%;
+    margin-top: 7px;
+    font-size: 12px;
+    box-shadow: 4px 4px 4px #eee;
+    background-color: white;
+    border-image: initial;
+}
+
+#content #sharebar .morebottom .border-color {
+	border-color:#393939;
+}
+#content #sharebar .morebottom a, #content #bopHolder #toolbar_total #sharebar .morebottom a:hover {
+	color: #919090;
+	text-decoration:none;
+	font-weight:normal;
+}
+
+#content .toolbarButton {
+	cursor: pointer;
+        float: left;
+        width: 25px;
+}
+
+#content .toolbarButton:hover {
+	background-position: 0 -30px !important;
+}
+
+
+p.avg-rating {
+    color: #de933a;
+    font-size: 13px;
+    font-weight:bold;
+    font-family: arial, sans-serif;
+}
+
+/*RATINGS*/
+.ratings {
+    margin-right: 10px;
+}
+
+.ratings .star {
+    background: url('http://media.washingtonpost.com/wp-srv/graphics/templates/images/ratings_star_off.png');
+    width: 15px;
+    height: 14px;
+    margin: 2px 0 0 3px;
+    float: left;
+    cursor: pointer;
+}
+
+.ratings .on {
+    background: url('http://media.washingtonpost.com/wp-srv/graphics/templates/images/ratings_star_on.png');
+    width: 15px;
+    height: 14px;
+}
+
+#newsharebar {
+     margin-top:15px;
+}
+
+#omniplayer {
+     width:945px;
+     height:530px;
+}
+
+#ooyala-player-companion-ad+div { 
+    display:none;
+}
+
+

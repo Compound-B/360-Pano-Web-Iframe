@@ -1,0 +1,92 @@
+/* stepper */
+.stepper-nav .next-btn {
+    font-family:"FranklinITCProBold","Arial",sans-serif;
+    font-size: 1.3em;
+    float: left;
+    display: block;
+    padding: 7px 8px 7px 12px;
+    margin-right: -1px;
+    border: 1px solid #ddd;
+    line-height: 20px;
+    color: #666;
+    text-decoration: none;
+}
+.stepper-nav .next-btn:hover {
+    color: #222;
+}
+.stepper-nav .next-btn i {
+    margin-left: 6px;
+}
+.content-panel {
+    width: 100%;
+}
+
+/* mobile/tablet specific */
+.mobile-stepper {
+    font-family:"FranklinITCProBold", "Helvetica", "Arial", sans-serif;
+    font-size: 1.1em;
+}
+.mobile-stepper.big {
+    font-size: 1.7em;
+}
+.mobile-stepper ul {
+    float: left;
+}
+.mobile-stepper li {
+    line-height: 20px;
+    float: left;
+    margin-right: -1px;
+    border: 1px solid #ddd;
+    list-style-type: none;
+}
+.mobile-stepper li:last-child {
+    margin-right: 0;
+}
+.mobile-stepper li.active {
+    border: 1px solid #ccc;
+    -moz-box-shadow: 0px 0px 11px #ddd inset;
+    -webkit-box-shadow: 0px 0px 11px #ddd inset;
+    box-shadow: 0px 0px 11px #ddd inset;
+}
+.mobile-stepper a {
+    display: block;
+    color: #666;
+    padding: 7px 12px;
+    text-decoration: none;
+}
+.mobile-stepper.big a {
+    padding: 11px 18px;
+} 
+.mobile-stepper a:hover {
+    color: #222;
+}
+.mobile-stepper .active a {
+    color: black;
+}
+.mobile-stepper.stepper-nav .next-btn {
+    font-size: 1.1em;
+}
+
+/* responsive */
+/* PHONES */
+/*
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+    .stepper-nav ul {
+        float: none;
+        height: auto;
+    }
+    .stepper-nav li {
+        float: none;
+        margin-right:0;
+        margin-bottom: -1px;
+    }
+    .stepper-nav li:last-child {
+        margin-bottom: 0;
+    }
+    .stepper-nav .next-btn {
+        display: none;
+    }
+}
+*/

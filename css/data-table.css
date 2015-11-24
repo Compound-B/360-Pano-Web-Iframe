@@ -1,0 +1,146 @@
+/* Table styles */
+table.data-table {
+    width:100%;
+    border-collapse:collapse;
+    font-size:12px;
+    color:#333;
+    font-family: "Helvetica",'Arial',sans-serif;
+    margin:10px 0;
+    text-align:left;
+}
+table.data-table th {
+    font-size:11px;
+    font-weight:700;
+    text-transform:uppercase;
+    color:#151515;
+    border-bottom:2px solid #151515;
+    padding-bottom:3px;
+    vertical-align:bottom;
+}
+table.data-table td {
+    vertical-align:top;
+    padding:10px 8px 9px 0;
+    border-bottom:1px solid #d8d8d8;
+}
+table.data-table td.party-dem {
+    border-left:5px solid #80acd6;
+}
+table.data-table td.party-rep {
+    border-left:5px solid #e27b7a;
+}
+table.data-table td.party-ind {
+    border-left:5px solid #aaa;
+}
+table.data-table th.header {
+    cursor:pointer;
+    padding:5px 7px 3px;
+    position:relative;
+}
+table.data-table th.header:hover {
+    background:#e8e8e8;
+}
+table.data-table th.headerSortUp,table.data-table th.headerSortDown {
+    background:#d8d8d8;
+}
+table.data-table th.header:after {
+    content:'';
+    background:url(http://www.washingtonpost.com/wp-srv/projects-media/congress/images/arrow-none.gif) no-repeat;
+    width:6px;
+    height:6px;
+    display:inline-block;
+    margin-left:5px;
+}
+table.data-table th.headerSortUp:after {
+    background:url(http://www.washingtonpost.com/wp-srv/projects-media/congress/images/arrow-up.gif) no-repeat;
+}
+table.data-table th.headerSortDown:after {
+    background:url(http://www.washingtonpost.com/wp-srv/projects-media/congress/images/arrow-down.gif) no-repeat;
+}
+table.sortable td {
+    padding-left:7px;
+    padding-right:7px;
+}
+/* Vertical static timeline */
+.simple-timeline {
+    border-top: 1px solid #eee;
+    padding:3px 0;
+    margin:-3px 0;
+    overflow:hidden;
+}
+.simple-timeline h3 {
+    font-size: 2em;
+}
+.simple-timeline .t-row {
+    color:#000;
+    vertical-align:top;
+    padding:15px 5px 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+.simple-timeline .date {
+    color: #828282;
+    text-transform: uppercase;
+}
+.simple-timeline .date h4 {
+    font-family:"FranklinITCStdLight","Franklin Gothic","ITC Franklin Gothic",'Arial',sans-serif;
+    font-weight:400;
+}
+.simple-timeline .text-body, .simple-timeline .text-body p {
+    margin-bottom:8px;
+    font-size: 15px;
+    line-height: 18px;
+}
+.simple-timeline .image {
+    max-width: 62%;
+    margin-left:10px;
+    float:right;
+}
+.simple-timeline .image img {
+    display: block;
+    max-width: 100%;
+}
+.simple-timeline .large-img {
+    max-width: 100%;
+    width:auto;
+    float: none;
+    margin-left:0;
+}
+.simple-timeline .large-img img {
+    max-width: 99%;
+}
+.simple-timeline .small-img {
+    width: 149px;
+}
+.simple-timeline .small-img img {
+    width: 145px;
+}
+
+@media screen and (max-device-width: 580px) {
+    .simple-timeline h3 {
+        font-size: 1.5em;
+    }
+
+    .simple-timeline .date h4 {
+        font-size: 14px;
+    }
+
+    .simple-timeline .text-body, .simple-timeline .text-body p {
+        font-size: 16px;
+    }
+
+    #vertical-timeline.simple-timeline ul.normal li {
+        font-size: 15px;
+    }
+
+    .simple-timeline .image {
+        max-width: 50%;
+        margin-left:10px;
+        float:right;
+    }
+
+    .simple-timeline .large-img {
+        max-width: 100%;
+        width:auto;
+        float: none;
+        margin-left:0;
+    }
+}
